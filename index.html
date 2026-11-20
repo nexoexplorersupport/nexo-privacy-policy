@@ -2,91 +2,464 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for Nexo Explorer">
-  <title>Privacy Policy | Nexo Explorer</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: #f7f8fa;
-      color: #263238;
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.7;
-    }
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid #e5e8eb;
-      padding: 48px 20px 36px;
-      text-align: center;
-    }
-    header h1 { margin: 0; font-size: 32px; }
-    header p { color: #65717c; margin: 8px 0 0; }
-    main {
-      max-width: 820px;
-      margin: 36px auto;
-      padding: 40px;
-      background: white;
-      border: 1px solid #e5e8eb;
-      border-radius: 12px;
-    }
-    h2 { font-size: 19px; margin-top: 30px; }
-    p { margin: 10px 0 18px; }
-    a { color: #1769aa; }
-    footer {
-      text-align: center;
-      color: #75808a;
-      padding: 0 20px 36px;
-      font-size: 13px;
-    }
-    @media (max-width: 600px) {
-      header { padding: 32px 16px; }
-      header h1 { font-size: 27px; }
-      main { margin: 16px; padding: 22px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Nexo Explorer Privacy Policy">
+<title>Privacy Policy | Nexo Explorer</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f8fa;
+  color: #263238;
+  line-height: 1.7;
+}
+header {
+  background: white;
+  border-bottom: 1px solid #e5e8eb;
+  padding: 36px 20px;
+  text-align: center;
+}
+header h1 { margin: 0; font-size: 32px; }
+header p { color: #65717c; margin: 6px 0; }
+.language {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+.language button {
+  padding: 9px 20px;
+  border: 1px solid #d4dbe2;
+  border-radius: 8px;
+  background: white;
+  color: #263238;
+  font-size: 15px;
+  cursor: pointer;
+}
+.language button.active {
+  background: #1769aa;
+  border-color: #1769aa;
+  color: white;
+}
+main {
+  max-width: 820px;
+  margin: 36px auto;
+  padding: 40px;
+  background: white;
+  border: 1px solid #e5e8eb;
+  border-radius: 12px;
+}
+h2 { font-size: 19px; margin-top: 30px; }
+h3 { font-size: 16px; margin-top: 22px; }
+p { margin: 10px 0 18px; }
+a { color: #1769aa; overflow-wrap: anywhere; }
+li { margin-bottom: 7px; }
+[hidden] { display: none !important; }
+footer {
+  text-align: center;
+  color: #75808a;
+  padding: 0 20px 36px;
+  font-size: 13px;
+}
+@media (max-width: 600px) {
+  header { padding: 30px 16px; }
+  header h1 { font-size: 27px; }
+  main { margin: 16px; padding: 22px; }
+}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Nexo Explorer</h1>
-    <p>Privacy Policy</p>
-    <p>Last updated: November 16, 2026</p>
-  </header>
-  <main>
-    <h2>1. Introduction</h2>
-    <p>Nexo Explorer is an Android file management application designed to help users organize, access, manage, and transfer files on their devices. We respect user privacy and aim to keep file management operations local to the user's device.</p>
 
-    <h2>2. Data Collection</h2>
-    <p>Nexo Explorer does not intentionally collect or transmit personal information, usage analytics, or tracking data to the developer. The application does not currently integrate advertising, analytics, or crash-reporting SDKs.</p>
+<header>
+  <h1>Nexo Explorer</h1>
+  <p id="subtitle">Privacy Policy</p>
+  <p id="date">Last updated: November 20, 2026</p>
+  <nav class="language" aria-label="Language">
+    <button id="btn-en" class="active"
+      type="button" onclick="setLanguage('en')">
+      English
+    </button>
+    <button id="btn-es"
+      type="button" onclick="setLanguage('es')">
+      Español
+    </button>
+  </nav>
+</header>
 
-    <h2>3. File Access and Processing</h2>
-    <p>Nexo Explorer accesses files and folders on the user's device to provide its file management features. This may include processing file names, paths, file types, sizes, and modification dates. File information is processed locally and is not uploaded to servers operated by the developer.</p>
+<main>
 
-    <h2>4. Thumbnails and Local Storage</h2>
-    <p>Nexo Explorer may generate and store thumbnails and related temporary data on the user's device to improve browsing performance. These files remain stored locally and are used for the application's functionality.</p>
+<article id="english">
 
-    <h2>5. Wireless FTP Transfers</h2>
-    <p>Nexo Explorer provides optional FTP functionality for wireless file transfers between connected devices. When the user enables FTP functionality, connected devices may access permitted folders and transfer files. These transfers occur directly between the participating devices and do not pass through servers operated by the developer.</p>
-    <p>Users should only enable FTP connections on networks and with devices they trust.</p>
+<h2>1. Introduction</h2>
+<p>Nexo Explorer is an Android file manager and multimedia
+application designed to help users browse, organize, manage,
+play, and transfer files stored on their devices.</p>
+<p>We respect user privacy and are committed to transparency
+regarding how information is processed by the application
+and its integrated third-party services.</p>
 
-    <h2>6. Third-Party Services</h2>
-    <p>The current version of Nexo Explorer does not integrate third-party advertising, analytics, or user-tracking services. If future versions introduce services that process personal information, this Privacy Policy will be updated accordingly.</p>
+<h2>2. Data Collection and Privacy</h2>
+<p>Nexo Explorer performs its core file management and
+multimedia operations locally on the user's device.</p>
+<p>The developer does not operate external servers to collect
+or store users' personal files, multimedia content,
+file names, or browsing history.</p>
+<p>However, Nexo Explorer integrates Google AdMob, a
+third-party advertising service that may automatically
+collect and process certain device and usage information
+for advertising purposes.</p>
+<p>The application does not require users to create an
+account to access its core functionality.</p>
 
-    <h2>7. Data Security</h2>
-    <p>Nexo Explorer processes file management operations locally. Users remain responsible for protecting their devices and controlling access to wireless file-sharing functionality.</p>
+<h2>3. File Access and Processing</h2>
+<p>Nexo Explorer accesses files and folders on the user's
+device to provide its file management features.</p>
+<p>This may include processing:</p>
+<ul>
+<li>File names and paths.</li>
+<li>File types and sizes.</li>
+<li>File modification dates.</li>
+<li>Folder structures.</li>
+<li>Locally stored multimedia files.</li>
+</ul>
+<p>This information is processed locally and is not uploaded
+to servers operated by the developer.</p>
 
-    <h2>8. Children's Privacy</h2>
-    <p>Nexo Explorer is a general-purpose file management application and is not specifically designed for children. The developer does not knowingly collect personal information from children.</p>
+<h2>4. Thumbnails and Local Storage</h2>
+<p>Nexo Explorer may generate and store thumbnails,
+cached images, and temporary files on the user's device
+to improve browsing performance.</p>
+<p>These resources remain stored locally and are used to
+provide efficient file navigation and multimedia browsing.</p>
 
-    <h2>9. Changes to This Privacy Policy</h2>
-    <p>This Privacy Policy may be updated to reflect changes in application functionality, data practices, or applicable requirements. The latest version will be made available at the published Privacy Policy URL.</p>
+<h2>5. Multimedia Playback</h2>
+<p>Nexo Explorer includes multimedia playback functionality
+for locally stored audio and video files.</p>
+<p>Multimedia files are processed and played locally on
+the user's device.</p>
+<p>The application supports continuous playback and
+background playback where supported by the device
+and operating system.</p>
+<p>The developer does not receive or store users'
+personal multimedia files or playback histories on
+external servers.</p>
 
-    <h2>10. Contact</h2>
-    <p>For questions about this Privacy Policy, please contact:</p>
-    <p><strong>Email:</strong> <a href="mailto:nexoexplorer.support@gmail.com">nexoexplorer.support@gmail.com</a></p>
-    <p><strong>Application:</strong> Nexo Explorer</p>
-  </main>
-  <footer>© 2026 Nexo Explorer. Privacy Policy.</footer>
+<h2>6. Wireless FTP File Transfers</h2>
+<p>Nexo Explorer provides optional FTP functionality for
+wireless file transfers between connected devices.</p>
+<p>When users enable this feature, connected devices
+may access permitted folders and transfer files.</p>
+<p>These transfers occur directly between the participating
+devices and do not pass through servers operated
+by the developer.</p>
+<p>Users should enable FTP access only on trusted networks
+and control which devices are authorized to connect.</p>
+
+<h2>7. Advertising — Google AdMob</h2>
+<p>Nexo Explorer integrates Google AdMob, an advertising
+service provided by Google.</p>
+<p>Advertisements are displayed in the following locations:</p>
+<ul>
+<li><strong>Native advertisements:</strong>
+Within the file explorer, integrated into the browsing
+layout and visually distinguished from user files.</li>
+<li><strong>Banner advertisements:</strong>
+Within the controls of the multimedia players.</li>
+</ul>
+<p>Nexo Explorer does not display interstitial advertisements
+that interrupt file navigation or multimedia playback.</p>
+<p>Advertisements are not displayed over full-screen
+video playback.</p>
+<p>The advertising integration is currently configured
+to use test advertisements during application testing.</p>
+
+<h3>Information Processed by Google AdMob</h3>
+<p>The Google Mobile Ads SDK automatically collects
+and shares certain information, which may include:</p>
+<ul>
+<li>IP addresses, which may be used to estimate general
+geographic location.</li>
+<li>Device identifiers, including Android advertising
+identifiers where available.</li>
+<li>Application and advertisement interactions.</li>
+<li>Diagnostic information, including application
+performance and technical data.</li>
+</ul>
+<p>Google may use this information for advertising delivery,
+measurement, analytics, security, and fraud prevention.</p>
+<p>These data practices may apply even when test
+advertisements are displayed.</p>
+<p><strong>Google Privacy Policy:</strong><br>
+<a href="https://policies.google.com/privacy">
+https://policies.google.com/privacy</a></p>
+<p><strong>Google Mobile Ads SDK Data Disclosure:</strong><br>
+<a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">
+Google Mobile Ads data disclosure</a></p>
+
+<h2>8. Advertising Privacy and User Choices</h2>
+<p>Depending on applicable laws and regional requirements,
+users may be presented with privacy notices and consent
+options regarding advertising-related data processing.</p>
+<p>Where required, consent must be obtained before
+relevant advertising data processing takes place.</p>
+<p>Users may manage available advertising identifiers
+and privacy settings through their Android device settings.</p>
+<p>Additional information:</p>
+<p><a href="https://policies.google.com/technologies/ads">
+Google Advertising Privacy</a></p>
+
+<h2>9. Data Security</h2>
+<p>Nexo Explorer is designed to perform its core file
+management and multimedia operations locally.</p>
+<p>The developer does not operate remote servers for
+storing users' personal files or multimedia libraries.</p>
+<p>Wireless file transfers are initiated by users and
+take place between connected devices.</p>
+<p>Users are responsible for protecting their devices
+and managing access to their local networks.</p>
+<p>Information processed by Google AdMob is subject
+to Google's applicable security and privacy practices.</p>
+
+<h2>10. Children's Privacy</h2>
+<p>Nexo Explorer is a general-purpose file management
+and multimedia application and is not specifically
+designed for children.</p>
+<p>The developer does not knowingly collect personal
+information from children through its own servers.</p>
+<p>Third-party advertising services may process certain
+device information, subject to their applicable
+policies and legal requirements.</p>
+
+<h2>11. Changes to This Privacy Policy</h2>
+<p>This Privacy Policy may be updated to reflect changes
+in application functionality, advertising services,
+data processing practices, or applicable legal requirements.</p>
+<p>Any updates will be published at the same
+Privacy Policy URL.</p>
+<p>Users are encouraged to review this page periodically.</p>
+
+<h2>12. Contact</h2>
+<p>For questions, privacy concerns, or requests
+related to this Privacy Policy, please contact:</p>
+<p><strong>Application:</strong> Nexo Explorer</p>
+<p><strong>Email:</strong>
+<a href="mailto:nexoexplorer.support@gmail.com">
+nexoexplorer.support@gmail.com</a></p>
+
+</article>
+
+<article id="spanish" hidden>
+
+<h2>1. Introducción</h2>
+<p>Nexo Explorer es una aplicación Android de gestión de
+archivos y reproducción multimedia, diseñada para permitir
+a los usuarios explorar, organizar, administrar, reproducir
+y transferir archivos almacenados en sus dispositivos.</p>
+<p>Respetamos la privacidad de los usuarios y nos
+comprometemos a ofrecer información transparente sobre
+cómo la aplicación y los servicios de terceros integrados
+procesan los datos.</p>
+
+<h2>2. Recopilación de datos y privacidad</h2>
+<p>Nexo Explorer realiza sus funciones principales de
+gestión de archivos y reproducción multimedia de forma
+local en el dispositivo del usuario.</p>
+<p>El desarrollador no utiliza servidores externos para
+recopilar o almacenar archivos personales, contenido
+multimedia, nombres de archivos ni historiales de
+navegación de los usuarios.</p>
+<p>Sin embargo, Nexo Explorer integra Google AdMob,
+un servicio publicitario de terceros que puede recopilar
+y procesar automáticamente determinada información del
+dispositivo y de su utilización con fines publicitarios.</p>
+<p>La aplicación no exige crear una cuenta para acceder
+a sus funciones principales.</p>
+
+<h2>3. Acceso y procesamiento de archivos</h2>
+<p>Nexo Explorer accede a los archivos y carpetas almacenados
+en el dispositivo para proporcionar sus funciones de
+gestión de archivos.</p>
+<p>Esto puede incluir el procesamiento de:</p>
+<ul>
+<li>Nombres y rutas de archivos.</li>
+<li>Tipos y tamaños de archivos.</li>
+<li>Fechas de modificación.</li>
+<li>Estructuras de carpetas.</li>
+<li>Archivos multimedia almacenados localmente.</li>
+</ul>
+<p>Esta información se procesa de forma local y no se
+envía a servidores administrados por el desarrollador.</p>
+
+<h2>4. Miniaturas y almacenamiento local</h2>
+<p>Nexo Explorer puede generar y almacenar miniaturas,
+imágenes en caché y archivos temporales en el dispositivo
+para mejorar el rendimiento de la navegación.</p>
+<p>Estos recursos permanecen almacenados localmente y
+se utilizan para proporcionar una exploración eficiente
+de archivos y contenido multimedia.</p>
+
+<h2>5. Reproducción multimedia</h2>
+<p>Nexo Explorer incorpora funciones de reproducción
+de archivos de audio y video almacenados localmente.</p>
+<p>Los archivos multimedia se procesan y reproducen
+directamente en el dispositivo.</p>
+<p>La aplicación admite reproducción continua y reproducción
+en segundo plano cuando el dispositivo y el sistema
+operativo lo permiten.</p>
+<p>El desarrollador no recibe ni almacena los archivos
+multimedia personales ni los historiales de reproducción
+de los usuarios en servidores externos.</p>
+
+<h2>6. Transferencias inalámbricas mediante FTP</h2>
+<p>Nexo Explorer proporciona una función FTP opcional
+para transferir archivos de forma inalámbrica entre
+dispositivos conectados.</p>
+<p>Cuando el usuario activa esta función, otros dispositivos
+conectados pueden acceder a las carpetas permitidas
+y transferir archivos.</p>
+<p>Estas transferencias se realizan directamente entre
+los dispositivos participantes, sin pasar por servidores
+administrados por el desarrollador.</p>
+<p>Los usuarios deben activar el acceso FTP únicamente
+en redes de confianza y controlar qué dispositivos
+están autorizados a conectarse.</p>
+
+<h2>7. Publicidad — Google AdMob</h2>
+<p>Nexo Explorer integra Google AdMob, un servicio
+publicitario proporcionado por Google.</p>
+<p>Los anuncios se muestran en las siguientes ubicaciones:</p>
+<ul>
+<li><strong>Anuncios nativos:</strong>
+Dentro del explorador de archivos, integrados en el
+diseño de navegación y diferenciados visualmente
+de los archivos del usuario.</li>
+<li><strong>Anuncios de banner:</strong>
+Dentro de los controles de los reproductores multimedia.</li>
+</ul>
+<p>Nexo Explorer no muestra anuncios intersticiales
+que interrumpan la navegación por archivos ni la
+reproducción multimedia.</p>
+<p>Tampoco muestra anuncios superpuestos durante la
+reproducción de videos en pantalla completa.</p>
+<p>Actualmente, la integración publicitaria está configurada
+para utilizar anuncios de prueba durante las pruebas
+de la aplicación.</p>
+
+<h3>Información procesada por Google AdMob</h3>
+<p>El SDK de anuncios para móviles de Google recopila
+y comparte automáticamente determinada información,
+que puede incluir:</p>
+<ul>
+<li>Direcciones IP, que pueden utilizarse para estimar
+la ubicación geográfica general.</li>
+<li>Identificadores del dispositivo, incluido el
+identificador de publicidad de Android cuando está disponible.</li>
+<li>Interacciones con la aplicación y los anuncios.</li>
+<li>Información de diagnóstico, incluidos datos
+técnicos y de rendimiento de la aplicación.</li>
+</ul>
+<p>Google puede utilizar esta información para mostrar
+anuncios, medir su rendimiento, realizar análisis,
+garantizar la seguridad y prevenir el fraude.</p>
+<p>Estas prácticas pueden aplicarse incluso cuando
+se muestran anuncios de prueba.</p>
+<p><strong>Política de privacidad de Google:</strong><br>
+<a href="https://policies.google.com/privacy?hl=es">
+https://policies.google.com/privacy?hl=es</a></p>
+<p><strong>Datos recopilados por Google Mobile Ads:</strong><br>
+<a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">
+Información oficial de Google Mobile Ads</a></p>
+
+<h2>8. Privacidad publicitaria y opciones del usuario</h2>
+<p>Dependiendo de la legislación aplicable y los requisitos
+regionales, los usuarios pueden recibir avisos de privacidad
+y opciones de consentimiento relacionadas con el
+procesamiento de datos publicitarios.</p>
+<p>Cuando sea obligatorio, se deberá obtener el
+consentimiento antes de realizar el procesamiento
+de datos publicitarios correspondiente.</p>
+<p>Los usuarios pueden administrar los identificadores
+publicitarios disponibles y las opciones de privacidad
+mediante la configuración de sus dispositivos Android.</p>
+<p>Información adicional:</p>
+<p><a href="https://policies.google.com/technologies/ads?hl=es">
+Privacidad publicitaria de Google</a></p>
+
+<h2>9. Seguridad de los datos</h2>
+<p>Nexo Explorer está diseñada para realizar sus principales
+funciones de gestión de archivos y reproducción multimedia
+de forma local.</p>
+<p>El desarrollador no utiliza servidores remotos para
+almacenar los archivos personales ni las bibliotecas
+multimedia de los usuarios.</p>
+<p>Las transferencias inalámbricas son iniciadas por
+los usuarios y se realizan entre los dispositivos conectados.</p>
+<p>Los usuarios son responsables de proteger sus dispositivos
+y administrar el acceso a sus redes locales.</p>
+<p>La información procesada por Google AdMob está sujeta
+a las prácticas de seguridad y privacidad aplicables
+de Google.</p>
+
+<h2>10. Privacidad de los menores</h2>
+<p>Nexo Explorer es una aplicación de uso general
+para gestionar archivos y reproducir contenido multimedia.
+No está diseñada específicamente para menores.</p>
+<p>El desarrollador no recopila deliberadamente información
+personal de menores mediante servidores propios.</p>
+<p>Los servicios publicitarios de terceros pueden procesar
+determinada información del dispositivo, de acuerdo
+con sus políticas y los requisitos legales aplicables.</p>
+
+<h2>11. Modificaciones de esta política</h2>
+<p>Esta política de privacidad puede actualizarse para
+reflejar cambios en las funciones de la aplicación,
+los servicios publicitarios, las prácticas de procesamiento
+de datos o los requisitos legales aplicables.</p>
+<p>Cualquier actualización se publicará en la misma
+dirección web de la política de privacidad.</p>
+<p>Se recomienda a los usuarios revisar periódicamente
+esta página.</p>
+
+<h2>12. Contacto</h2>
+<p>Para consultas, inquietudes sobre privacidad o solicitudes
+relacionadas con esta política, podés comunicarte mediante:</p>
+<p><strong>Aplicación:</strong> Nexo Explorer</p>
+<p><strong>Correo electrónico:</strong>
+<a href="mailto:nexoexplorer.support@gmail.com">
+nexoexplorer.support@gmail.com</a></p>
+
+</article>
+</main>
+
+<footer>
+  © 2026 Nexo Explorer — Privacy Policy
+</footer>
+
+<script>
+function setLanguage(lang) {
+  const english = lang === "en";
+
+  document.getElementById("english").hidden = !english;
+  document.getElementById("spanish").hidden = english;
+
+  document.getElementById("btn-en")
+    .classList.toggle("active", english);
+  document.getElementById("btn-es")
+    .classList.toggle("active", !english);
+
+  document.getElementById("subtitle").textContent =
+    english ? "Privacy Policy" : "Política de privacidad";
+
+  document.getElementById("date").textContent =
+    english
+      ? "Last updated: November 20, 2026"
+      : "Última actualización: 20 de noviembre de 2026";
+
+  document.documentElement.lang = lang;
+}
+</script>
+
 </body>
 </html>
